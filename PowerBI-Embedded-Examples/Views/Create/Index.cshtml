@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Create Report";
+    ViewData["SourceFiles"] = new List<string>
+    {
+        "Views/Create/Index.cshtml",
+        "wwwroot/js/create.js",
+        "Controllers/CreateController.cs",
+        "Controllers/EmbedInfoController.cs",
+        "Services/PbiEmbedService.cs",
+        "Models/EmbedParamsCreate.cs"
+    };
+}
+    <main class="row h-75">
+        <section id="report-container" class="embed-container col-lg-offset-4 col-lg-12 col-md-offset-5 col-md-12 col-sm-offset-5 col-sm-12 h-100">
+        </section>
+
+        <!-- Used to display report embed error messages -->
+        <section class="error-container m-5">
+        </section>
+    </main>
+@section Scripts {
+    <script src="js/create.js"></script>
+}

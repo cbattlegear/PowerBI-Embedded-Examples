@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Row Level Security";
+    ViewData["SourceFiles"] = new List<string>
+    {
+        "Views/RLS/Index.cshtml",
+        "wwwroot/js/rls.js",
+        "Controllers/RlsController.cs",
+        "Controllers/EmbedInfoController.cs",
+        "Services/PbiEmbedService.cs",
+        "Models/EmbedParamsReport.cs"
+    };
+}
+    <main class="row h-75">
+        <section id="text-container" class="embed-container col-12">
+            <select id="rlsuser">
+                <option value="-1">Admin (View All)</option>
+                <option value="319" selected>Erich Leuschke</option>
+                <option value="434">Iliana Morar</option>
+                <option value="93">Zoey Medhurst</option>
+            </select>
+            <span id="timeout"></span>
+        </section>
+        <section id="report-container" class="embed-container col-12 h-100">
+        </section>
+
+        <!-- Used to display report embed error messages -->
+        <section class="error-container m-5">
+        </section>
+    </main>
+    @section Scripts {
+        <script src="js/rls.js"></script>
+    }

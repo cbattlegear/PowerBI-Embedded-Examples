@@ -1,0 +1,66 @@
+﻿<!-- Copyright (c) Microsoft Corporation.
+Licensed under the MIT license. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PowerBI Embedded Sample - @ViewData["Title"]</title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    @RenderSection("ExtraCss", required: false)
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">PowerBI Embedded Sample - @ViewData["Title"]</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Create">Create a Report</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Paginated">Paginated</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/QnA">QnA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/RLS">Row Level Security</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/WhiteLabel">White Label Report</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="vh-100">
+        @RenderBody()
+        <footer class="h-25 mt-5">
+            This is an example of embedding a Power BI report, <a href="https://github.com/">the code is available on GitHub.</a>
+            The code for this example is contained in these files: 
+            <ul>
+                @foreach (string s in (List<string>)ViewData["SourceFiles"])
+                {
+                    <li>@s</li>
+                }
+            </ul>
+    </footer>
+    </div>
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="lib/powerbi-client/dist/powerbi.min.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

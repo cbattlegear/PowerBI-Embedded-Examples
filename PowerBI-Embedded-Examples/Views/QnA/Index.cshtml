@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "QnA";
+    ViewData["SourceFiles"] = new List<string>
+    {
+        "Views/QnA/Index.cshtml",
+        "wwwroot/js/qna.js",
+        "Controllers/QnAController.cs",
+        "Controllers/EmbedInfoController.cs",
+        "Services/PbiEmbedService.cs",
+        "Models/EmbedParamsQnA.cs"
+    };
+}
+    <main class="row h-75">
+        <section id="text-container" class="embed-container col-12">
+            <input id="question" type="text" value="Count of Unique Patients" /> <button id="ask">Ask!</button>
+        </section>
+        <section id="report-container" class="embed-container col-12 h-100">
+        </section>
+
+        <!-- Used to display report embed error messages -->
+        <section class="error-container m-5">
+        </section>
+    </main>
+@section Scripts {
+    <script src="js/qna.js"></script>
+}

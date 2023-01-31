@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Paginated";
+    ViewData["SourceFiles"] = new List<string>
+    {
+        "Views/Paginated/Index.cshtml",
+        "wwwroot/js/paginated.js",
+        "Controllers/PaginatedController.cs",
+        "Controllers/EmbedInfoController.cs",
+        "Services/PbiEmbedService.cs",
+        "Models/EmbedParamsReport.cs"
+    };
+}
+    <main class="row h-75">
+
+        <section id="report-container" class="embed-container col-12 h-100">
+        </section>
+
+        <!-- Used to display report embed error messages -->
+        <section class="error-container m-5">
+        </section>
+    </main>
+@section Scripts {
+    <script src="js/paginated.js"></script>
+}
+

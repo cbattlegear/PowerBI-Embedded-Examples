@@ -1,0 +1,11 @@
+﻿#overlay {
+    position: absolute; 
+    width: inherit;
+    height: inherit;
+}
+
+#overlay #spinner {
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% - 100px);
+}
