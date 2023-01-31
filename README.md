@@ -1,5 +1,7 @@
 # Power BI Embedded sample in .NET 6
 
+You can see this currently running, albeit slowly, at [PowerBI Embedded Sample](https://pbicb.azurewebsites.net/)
+
 ## Requirements
 
 1. .NET 6.0 SDK or higher
