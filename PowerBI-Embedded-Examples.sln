@@ -1,9 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33417.168
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerBI-Embedded-Examples", "PowerBI-Embedded-Examples\PowerBI-Embedded-Examples.csproj", "{1A13B615-E49B-47EA-B23D-EE164230C682}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PowerBI-Embedded-Examples", "PowerBI-Embedded-Examples\PowerBI-Embedded-Examples.csproj", "{1A13B615-E49B-47EA-B23D-EE164230C682}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2105C644-E210-4EC9-8C9B-5AD499043642}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,9 +18,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{1A13B615-E49B-47EA-B23D-EE164230C682}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -30,5 +32,8 @@ Global
 		{1A13B615-E49B-47EA-B23D-EE164230C682}.Release|x64.Build.0 = Release|Any CPU
 		{1A13B615-E49B-47EA-B23D-EE164230C682}.Release|x86.ActiveCfg = Release|Any CPU
 		{1A13B615-E49B-47EA-B23D-EE164230C682}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal

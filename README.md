@@ -1,8 +1,8 @@
-# Power BI Embedded sample in .NET 6
+# Power BI Embedded sample in .NET 7
 
 ## Requirements
 
-1. .NET 6.0 SDK or higher
+1. .NET 7.0 SDK or higher
 
 2. IDE/code editor. We recommend using Visual Studio Code or Visual Studio 2022 (or a later version).
 
